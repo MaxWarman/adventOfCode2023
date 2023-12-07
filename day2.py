@@ -30,7 +30,7 @@ def is_game_possible(line):
         mul *= val
     return (possible, mul)
 
-def solvePartOne(input_lines):
+def solve_part_one(input_lines):
     sum_of_possible = 0
     game_id = 0
     for line in input_lines:
@@ -41,7 +41,7 @@ def solvePartOne(input_lines):
     solution = sum_of_possible
     print(f"Day {DAY_NUM}, part 1 solution: {solution}")
 
-def solvePartTwo(input_lines):
+def solve_part_two(input_lines):
     sum_of_multiples = 0
     for line in input_lines:
         multiple = is_game_possible(line)[1]
@@ -60,8 +60,8 @@ def main():
 
     input_lines = get_input_lines(input_path)
 
-    solvePartOne(input_lines)
-    solvePartTwo(input_lines) 
+    solve_part_one(input_lines)
+    solve_part_two(input_lines) 
 
 
 if __name__ == "__main__":

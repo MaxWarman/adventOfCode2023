@@ -56,7 +56,7 @@ def find_first_and_last_digit_pt2(line):
 
     return [first, last if last != "" else first]
 
-def solvePartOne(input_lines):
+def solve_part_one(input_lines):
     solution_numbers = []
     for line in input_lines:
         digits = find_first_and_last_digit_pt1(line)
@@ -65,7 +65,7 @@ def solvePartOne(input_lines):
     solution = sum(solution_numbers)
     print(f"Day {DAY_NUM}, part 1 solution: {solution}")
 
-def solvePartTwo(input_lines):
+def solve_part_two(input_lines):
     solution_numbers = []
     for line in input_lines:
         digits = find_first_and_last_digit_pt2(line)
@@ -84,8 +84,8 @@ def main():
 
     input_lines = get_input_lines(input_path)
 
-    solvePartOne(input_lines)
-    solvePartTwo(input_lines) 
+    solve_part_one(input_lines)
+    solve_part_two(input_lines) 
 
 
 if __name__ == "__main__":
