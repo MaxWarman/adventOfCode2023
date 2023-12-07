@@ -32,7 +32,6 @@ def solve_part_one(input_lines):
         matched = 0
         for number in guessed:
             if number in winning:
-                print(number)
                 matched += 1
         if matched:
             score += 2 ** (matched - 1)
@@ -71,7 +70,7 @@ def main():
 
     input_lines = get_input_lines(input_path)
 
-    #solve_part_one(input_lines)
+    solve_part_one(input_lines)
     solve_part_two(input_lines) 
 
 
